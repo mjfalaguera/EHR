@@ -7,6 +7,7 @@ Connect UKBB and All of Us prescription data to ChEMBL and Open Targets Platform
 ## Data model
 
 patient -> EHR -> prescription -> drug -> drug mechanism -> drug target VS novel target
+![alt text](schema.png)
 
 ## Code
 
