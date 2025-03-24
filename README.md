@@ -11,12 +11,10 @@ patient -> EHR -> prescription -> drug -> drug mechanism -> drug target VS novel
 
 ## Code
 
-`queryUKBB.py`: Query EHR data for IBD patients in the UKBB (available at Stanford Sherlock cluster).
-
-`queryOT.py`: Query Open Targets Platform data (downloaded locally from http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/24.09). Output stored in working directory `data/ot`.
-
-`queryChEMBL.py`: Query ChEMBL data (downloaded locally from https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_35/). Output stored in working directory `data/chembl`.
-
-`queryMix.py`: Query data from ChEMBL, UKBB, Open Targets Platform, pathways. Output stored in working directory `data/mix`.
+`queryData.py`: Query data from:
+- ChEMBL: downloaded locally from https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_35/
+- Open Targets Platform: downloaded locally from http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/24.09
+- Pathways: provided by Gowri Nayar
+- UKBB
 
 `nlpTools.py`: Apply NLP tools to drug data from UKBB and ChEMBL. Output stored in working directory `data/mix`.
